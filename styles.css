@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: rgb(149, 158, 172);
+  --medium-grey: 124, 135, 152;
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --width: 2.5rem;
+  --h1-size: 2rem;
+  --p-size: 1rem;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+}
+
+.img-container {
+  background-color: rgba(var(--medium-grey), 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  margin: 50px auto;
+  width: 30%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.rating-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating-list label,
+.btn {
+  cursor: pointer;
+}
+.rating-list label {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(var(--medium-grey), 0.3);
+}
+.rating-list label:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+input[type="radio"]:checked + label {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.rating-list input[type="radio"] {
+  display: none;
+}
+.content h1 {
+  font-size: var(--h1-size);
+}
+.content p {
+  font-size: var(--p-size);
+}
+.btn,
+.content h1 {
+  color: var(--white);
+}
+.content h1,
+.content p {
+  margin-bottom: 10px;
+}
+
+.content p,
+.rating-list {
+  color: var(--light-grey);
+}
+
+.thankSection {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+.selection {
+  color: var(--primary-color);
+  background-color: rgba(var(--medium-grey), 0.3);
+  padding: 5px 20px;
+  border-radius: 25px;
+  margin: 30px 0;
+}
+.thankSection .content {
+  text-align: center;
+}
+
+/* bottom text */
+.attribution {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  white-space: nowrap;
+  bottom: 20px;
+}
+.attribution a:visited,
+.attribution a:link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+  .attribution {
+    white-space: normal;
+    text-align: center;
+  }
+}
