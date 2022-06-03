@@ -29,7 +29,7 @@ Users able to:
 ### Links
 
 - Solution URL: [Git Hub Source Code](https://github.com/Kaung-Pyae-Min-Thein/Interactive-rating-component)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://kaung-pyae-min-thein.github.io/Interactive-rating-component/)
 
 ### Built with
 
